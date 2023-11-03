@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './page.module.css'
 import Image from 'next/image'
+import Button from '../components/Button/Button'
 
 const About = () => {
   return (
@@ -26,6 +27,10 @@ const About = () => {
             industrial revolution of the nineteenth century, the computer and the information and communication
             technology built upon it have drastically changed business, culture, government and science, and have
             touched nearly every aspect of our lives</p>
+        <br/>
+        <br/>
+        <Button url='/contact' text='Contact' />
+        
        </div>
 
      </div>
