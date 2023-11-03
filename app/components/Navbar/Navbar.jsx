@@ -1,3 +1,4 @@
+"use client"
 import Link from 'next/link'
 import React from 'react'
 
@@ -23,6 +24,11 @@ const links = [
  title: "About",
  url: "/about"
  },
+ {
+    id:5,
+    title: "Contact",
+    url: "/contact"
+    },
  ];
 
 const Navbar = () => {
@@ -33,6 +39,7 @@ const Navbar = () => {
             {links.map(link =>(
                 <Link key={link.id} href={link.url}>{link.title}</Link>
             ))}
+            <button onClick={()=> console.log('Logout button')}>Logout</button>
         </div>
     </div>
   )
